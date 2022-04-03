@@ -1,1 +1,46 @@
-// Specific CSS for your home-page
+.container-opening {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  border: solid 3px $gold;
+}
+
+.countdown {
+  display: flex;
+  width: 400px;
+  justify-content: space-around;
+  padding-top: 30px;
+}
+
+.container-day,
+.container-hour,
+.container-minute,
+.container-second {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+img {
+  margin: 40px 0px;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.address p {
+  margin-bottom: 0px;
+}
+
+.fas {
+  color: $gold;
+  margin-right: 15px;
+}
+
+.reservation p {
+  margin-top: 30px;
+}
