@@ -1,12 +1,54 @@
-.navbar-lewagon {
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
   justify-content: space-between;
-  background: white;
+  position: fixed;
+  color: $gold;
+  background: $black;
+  padding: 0px 30px;
+  z-index: 1000;
 }
 
-.navbar-lewagon .navbar-collapse {
+.navbar .navbar-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+#brand {
+  font-family: 'Gruppo', cursive;
+  font-size: 2rem;
+  color: $gold;
 }
+
+a.nav-link {
+  color: $gold;
+  padding-left: 2rem !important;
+  font-size: 18px;
+}
+
+a#navbarDropdown.dropdown-toggle {
+  color: #161623;
+}
+
+a.nav-link.dropdown-item {
+  color: #074E81;
+  text-decoration: none;
+  text-align: center;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 90px;
+  right: 30px;
+  width: 100px;
+}
+
+
+#navbarNavAltMarkup {
+
+}
+
