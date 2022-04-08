@@ -1,0 +1,64 @@
+.section-menu {
+  background-color: #ECF0F3;
+  min-height: 100vh;
+}
+.wrapper-menu {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem 1rem 2rem 1rem;
+  background-color: none;
+  border-radius: 14px;
+  box-shadow: 13px 13px 20px #CBCED1,
+              -13px -13px 20px #FFFFFF;
+}
+.nav-link,
+.nav-pills {
+  color: $orange;
+  text-decoration: none;
+  :hover {
+    color: $orange;
+    cursor: pointer;
+  }
+}
+.menu-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-menu {
+  display: block;
+  position: relative;
+  margin: 0.25rem;
+  padding: 0.3rem;
+  width: 375px;
+  height: 80px;
+  background-color: none;
+  border: none;
+  border-radius: 8px;
+  box-shadow: inset 5px 5px 9px #CBCED1,
+              inset -5px -5px 9px #FFFFFF;
+}
+.card-content {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+.card-content p {
+  color: $dark-gray;
+  line-height: 1;
+  font-weight: normal;
+}
+.card-price {
+  position: absolute;
+  right: 8px;
+  bottom: 8px;
+  text-align: end;
+  font-weight: 600;
+  color: $dark-gray;
+}
+small.tab {
+  color: $orange;
+  font-style: italic;
+  font-weight: 200;
+}
+
