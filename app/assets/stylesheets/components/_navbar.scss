@@ -9,27 +9,22 @@
   padding: 0px 30px;
   z-index: 1000;
 }
-
 .navbar .navbar-collapse {
   flex-grow: 0;
 }
-
 #brand {
   font-family: 'Gruppo', cursive;
   font-size: 2rem;
   color: $gold;
 }
-
 .navbar-nav a.nav-link {
   color: $gold;
   padding-left: 2rem !important;
   font-size: 18px;
 }
-
 a#navbarDropdown.dropdown-toggle {
-  color: #161623;
+  color: $gold;
 }
-
 a.nav-link.dropdown-item {
   color: #074E81;
   text-decoration: none;
@@ -39,16 +34,14 @@ a.nav-link.dropdown-item {
   align-items: center;
   justify-content: center;
 }
-
 .dropdown-menu {
   position: absolute;
   top: 90px;
   right: 30px;
   width: 100px;
 }
-
-
-#navbarNavAltMarkup {
+#nav-reservation {
 
 }
+
 

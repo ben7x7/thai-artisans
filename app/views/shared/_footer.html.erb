@@ -1,1 +1,70 @@
-
+<footer>
+  <div class="footer-header mt-5">
+    <%= image_tag('logo-footer.webp') %>
+    <div class="icone-info">
+      <i class="fas fa-mobile-alt fa-2x"></i>
+      <p>+41 22 717 9090</p>
+    </div>
+    <div class="icone-info">
+      <i class="far fa-envelope fa-2x"></i>
+      <p>contact@thai-artisans.ch</p>
+    </div>
+    <div class="icone-info">
+      <i class="fas fa-map-marker-alt fa-2x"></i>
+      <p>46 Route de Chancy, 1213 Onex</p>
+    </div>
+    <div class="icone-info">
+      <i class="far fa-clock fa-2x"></i>
+      <p>
+        LU-SA: ..... 12h-14h <br>
+        MA-SA: ..... 19h-23h
+      </p>
+    </div>
+  </div>
+  <div class="footer-links">
+    <div class="links-media">
+      <div class="links-title">
+        <p>Suivez nous</p>
+        <hr class="lign">
+      </div>
+      <div class="links-list-online">
+        <%= link_to 'https://www.facebook.com/latabledesartisans', class:"social-link", target: :_blank do %>
+          <i class="fab fa-facebook-square fa-3x"></i>
+        <% end %>
+        <%= link_to 'https://www.facebook.com/latabledesartisans', class:"social-link", target: :_blank do %>
+          <i class="fab fa-instagram-square fa-3x"></i>
+        <% end %>
+      </div>
+    </div>
+    <div class="links-site">
+      <div class="links-title">
+        <p>Plan du Site</p>
+        <hr class="lign">
+      </div>
+      <div class="links-list">
+        <ul>
+          <li><%= link_to 'Accueil', root_path, class:"footer-link" %></li>
+          <li><%= link_to 'Réservation', root_path, class:"footer-link" %></li>
+          <li><%= link_to 'Menu', menu_path, class:"footer-link" %></li>
+          <li><%= link_to 'Contact', contact_path, class:"footer-link" %></li>
+        </ul>
+      </div>
+    </div>
+    <div class="links-mentions">
+      <div class="links-title">
+        <p>Mentions Légales</p>
+        <hr class="lign">
+      </div>
+      <div class="links-list">
+        <ul>
+          <li> <%= link_to 'Cookies', kookies_path, class:"footer-link" %> </li>
+          <li> <%= link_to 'Mentions Légales', mentions_path, class:"footer-link" %> </li>
+          <li> <%= link_to 'RGPD', rgpd_path, class:"footer-link" %> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>©ThaiArtisans2022</p>
+  </div>
+</footer>
