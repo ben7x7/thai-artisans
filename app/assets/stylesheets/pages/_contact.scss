@@ -1,0 +1,54 @@
+section.section-contact {
+  background-image: image-url('map.png');
+  background-color: $dark-gray;
+  background-size: cover;
+  min-height: 100vh;
+}
+.contact-form-wrapper {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 50px 15px;
+  color: $gold;
+}
+h1.form-title {
+  font-size: 56px;
+}
+p.subtitle {
+  font-style: italic;
+  font-size: 21px;
+}
+.input-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+}
+input, textarea {
+  background-color: $dark-gray;
+  opacity: 0.8;
+  border: solid 1px $gold;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px 20px;
+  margin-bottom: .8rem;
+  color: $up-white;
+  outline-color: $gold !important;
+}
+input {
+  height: 50px;
+}
+input.btn.btn-gold {
+  width: auto;
+  height: auto;
+}
+textarea {
+  height: 96px;
+}
+
+@media screen and (max-width: 768px) {
+  .form-wrapper {
+    width: 90%;
+  }
+}
+

@@ -29,9 +29,9 @@
   display: block;
   position: relative;
   margin: 0.25rem;
-  padding: 0.3rem;
-  width: 375px;
-  height: 80px;
+  padding: 0.8rem;
+  width: 23.125rem;
+  height: 5rem;
   background-color: none;
   border: none;
   border-radius: 8px;
@@ -40,18 +40,18 @@
 }
 .card-content {
   position: absolute;
-  top: 8px;
-  left: 8px;
+  top: .8rem;
+  left: .8rem;
 }
 .card-content p {
   color: $dark-gray;
-  line-height: 1;
+  line-height: 1.2;
   font-weight: normal;
 }
 .card-price {
   position: absolute;
-  right: 8px;
-  bottom: 8px;
+  right: .8rem;
+  bottom: .2rem;
   text-align: end;
   font-weight: 600;
   color: $dark-gray;

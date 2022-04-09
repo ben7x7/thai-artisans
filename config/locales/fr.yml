@@ -93,4 +93,12 @@ fr:
       title: "Réservation en ligne"
       subtitle1: "Afin de réserver une table pour aujourd'hui,"
       subtitle2: "veuillez contacter le restaurant au +41.22.792.19.00"
+  contact:
+    title: "Contacter Nous"
+    subtitle: ""
+    label:
+      name: "Nom:"
+      mail: "Email:"
+      message: "Message:"
+    btn: "ENVOYER"
 

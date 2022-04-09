@@ -1,39 +1,45 @@
 .btn {
-  padding: 1rem 2rem;
+  padding: .8rem 2rem;
   text-decoration: none;
   border-radius: 5px;
   font-size: 24px;
   font-weight: bold;
 }
-
 .btn-gold {
   background-color: $gold;
   color: $white;
+  border: solid 2px $gold;
   text-shadow: 0px 0px 1px $down-gray,
                1px -1px 3px $dark-gray;
-  box-shadow:  3px 3px 8px #B1B1B1,
-               -3px -3px 8px #FFFFFF;
 }
-
 .btn-gold:hover {
-
+  background-color: $dark-gray;
+  text-shadow: none;
+  color: $gold;
 }
-
 .btn-orange {
   background-color: $orange;
   color: $white;
   text-shadow: 0px 0px 1px $down-gray,
                1px -1px 3px $black;
-  border: solid 5px $orange;
+  border: solid 2px $orange;
   box-shadow:  3px 3px 8px #B1B1B1,
                -3px -3px 8px #FFFFFF;
 }
 .btn-orange:hover {
   background-color: #ECF0F3;
   color: $orange;
-  border: solid 5px $orange;
+  border: solid 2px $orange;
   text-shadow: none;
 }
-
-.btn-black {}
-.btn-black:hover {}
+.btn-black {
+  background-color: $down-black;
+  color: $gold;
+  border: solid 2px $down-black;
+}
+.btn-black:hover {
+  background-color: $gold;
+  color: white;
+  text-shadow: 0px 0px 1px $down-gray,
+               1px -1px 3px $dark-gray;
+}
