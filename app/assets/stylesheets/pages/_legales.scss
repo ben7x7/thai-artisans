@@ -1,0 +1,30 @@
+.container-mentions {
+  background-color: $white;
+  background-size: cover;
+}
+.legales-wrapper {
+  max-width: 900px;
+  padding: 60px 15px;
+  margin: auto;
+}
+.mentions-title {
+  margin-bottom: 50px;
+}
+.btn-legales {
+  border-radius: 5px;
+  border: solid 1px $dark-gray;
+  padding: 1rem 2rem;
+  font-size: 16px;
+  background-color: $dark-gray;
+  color: $white;
+  text-decoration: none;
+}
+
+.btn-legales:hover {
+  background-color: $white;
+  color: $dark-gray;
+  border: solid 2px $dark-gray;
+  font-weight: bold;
+  text-decoration: none;
+}
+
