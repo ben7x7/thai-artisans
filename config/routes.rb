@@ -7,5 +7,9 @@ Rails.application.routes.draw do
     get 'menu', to: 'pages#menu', as: :menu
     get 'rgpd', to: 'pages#rgpd', as: :rgpd
     resources :reservations, only: [:new, :create]
+
+    get '/404', to: 'errors#not_found', via: :all
+    get '/422', to: 'errors#unacceptable', via: :all
+    get '/500', to: 'errors#server_error', via: :all
   end
 end
