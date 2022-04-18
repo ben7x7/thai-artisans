@@ -79,7 +79,7 @@ fr:
       btn: "Réserver une table"
   s4:
     info:
-      title: "CONTACT"
+      title: "REJOIGNEZ NOUS"
       week1: "Lundi - Vendredi : ............ "
       week2: "Mardi - Samedi : .............. "
   s5:
@@ -94,7 +94,7 @@ fr:
       subtitle1: "Afin de réserver une table pour aujourd'hui,"
       subtitle2: "veuillez contacter le restaurant au +41.22.792.19.00"
   contact:
-    title: "Contacter Nous"
+    title: "CONTACTEZ NOUS"
     subtitle: ""
     label:
       name: "Nom:"
