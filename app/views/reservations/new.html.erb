@@ -1,14 +1,13 @@
-<div class="section-welcome reservation-new">
+<div class="section-reservation">
   <div class="container">
     <div class="row">
       <div class="col">
-        <div class="title-header text-center">
-          <%= image_tag('thai-roof.webp') %>
+        <div class="thai-roof"></div>
+        <div class="reservation-header text-center">
           <h2><%= t('reservation.new.title') %></h2>
         </div>
-        <br>
-        <div class="title-subheader text-center text-muted">
-          <p id="title-subheader">
+        <div class="reservation-subheader text-center text-muted">
+          <p id="reservation-subheader">
             <%= t('reservation.new.subtitle1') %> <br>
             <%= t('reservation.new.subtitle2') %>
           </p>
@@ -21,41 +20,63 @@
           <%= form_for @reservation do |f| %>
             <div class="row">
               <div class="col-md-6">
-                <div class="form-group">
+                <div class="form-group ta-form-group">
                   <%= f.label :name,  class: "sr-only" %>
                   <%= f.text_field :name, placeholder: "Nom", required: true %>
+                  <div class="icone-input-end">
+                    <i class="fas fa-user"></i>
+                  </div>
                 </div>
-                <div class="form-group">
+                <div class="form-group ta-form-group">
                   <%= f.label :email, class: "sr-only" %>
                   <%= f.email_field :email, placeholder: "Email", required: true %>
+                  <div class="icone-input-end">
+                    <i class="fas fa-at"></i>
+                  </div>
                 </div>
-                <div class="form-group">
+                <div class="form-group ta-form-group">
                   <%= f.label :phone, class: "sr-only" %>
                   <%= f.text_field :phone, placeholder: "Numéro de téléphone", required: true %>
+                  <div class="icone-input-end">
+                    <i class="fas fa-mobile-alt"></i>
+                  </div>
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="form-group">
+                <div class="form-group ta-form-group">
                   <%= f.label :pax, class: "sr-only" %>
                   <%= f.number_field :pax, value:"1", min:"1", required: true %>
+                  <div class="icone-input-end">
+                    <i class="fas fa-users"></i>
+                  </div>
                 </div>
-                <div class="form-group">
+                <div class="form-group ta-form-group">
                   <%= f.label :date, class: "sr-only" %>
                   <%= f.date_field :date, format: "%a %e %b %Y", required: true %>
+                  <div class="icone-input-end">
+                    <i class="far fa-calendar-check"></i>
+                  </div>
                 </div>
-                <p class="error"><%= show_errors(@reservation, :date) %></p>
-                <div class="form-group">
+                <p class="errors-input"><%= show_errors(@reservation, :date) %></p>
+                <div class="form-group ta-form-group">
                   <%= f.label :time, class: "sr-only" %>
                   <%= f.time_field :time, required: true %>
+                  <div class="icone-input-end">
+                    <i class="far fa-clock"></i>
+                  </div>
                 </div>
-                <p class="error"><%= show_errors(@reservation, :time) %></p>
+                <p class="errors-input"><%= show_errors(@reservation, :time) %></p>
               </div>
             </div>
             <div class="row">
               <div class="col">
-                <div class="form-group">
+                <div class="form-group ta-form-group">
                   <%= f.label :message, class: "sr-only" %>
                   <%= f.text_field :message, placeholder: "message...", required: false %>
+                  <div class="icone-input-end">
+                    <i class="fas fa-pencil"></i>
+                  </div>
+                </div>
                 </div>
                 <div class="hidden">
                   <%= f.label :nickname %>
@@ -66,7 +87,7 @@
             <div class="row">
               <div class="col">
                 <div class="text-center">
-                  <%= f.submit 'RESERVER UNE TABLE', class: "btn-home disabled" %>
+                  <%= f.submit 'RESERVER UNE TABLE', class: "btn-gold disabled" %>
                   <br>
                   <br>
                   <a class="home-link" href="/"><%= t('link.home') %></a>
