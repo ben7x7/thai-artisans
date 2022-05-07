@@ -1,3 +1,26 @@
+<section class="section-home-page">
+  <div class="resto-wrapper">
+    <div class="resto d-flex flex-row">
+      <%= image_tag('logo-50-gold.webp') %>
+      <h1>Thaï Artisans</h1>
+    </div>
+    <p class="home-text text-center">RESTAURANT</p>
+  </div>
+  <div class="resto-info d-flex flex-column">
+    <div class="resto-info-details d-flex flex-row">
+      <i class="fas fa-map-marker-alt"></i><p>Route de Chancy 76, 1213 Onex</p>
+    </div>
+    <br>
+    <div class="resto-info-details d-flex flex-row">
+      <i class="fas fa-phone"></i><p>022.792.19.00</p>
+    </div>
+  </div>
+  <div class="resto-link text-center">
+    <%= link_to t('s1.btn'), new_reservation_path, class: "btn btn-gold" %>
+  </div>
+</section>
+
+
 <section class="section-welcome">
   <div class="welcome">
     <h2><%= t('s2.welcome') %></h2>
@@ -25,14 +48,15 @@
       <div class="info-acces mt-3">
         <div class="address d-flex flex-row justify-content-center">
           <i class="fas fa-map-marker-alt"></i>
-          <p>Rue Gaudy-Le-Fort 14, 1213 Onex</p>
+          <p>Route de Chancy 76, 1213 Onex</p>
         </div>
 
-        <div class="access d-flex flex-row justify-content-center align-content-center">
+        <div class="access d-flex flex-row justify-content-center mt-2">
           <i class="fas fa-bus"></i>
           <p>
             Arrêt: Bandol <br>
-            Bus: <span>J</span> <span>K</span> <span>L</span> <span>NJ</span> | Tram: <span>14</span>
+            Tram: <span>14</span>
+            Bus: <span>J</span> - <span>K</span> - <span>L</span> - <span>NJ</span>
           </p>
         </div>
       </div>
