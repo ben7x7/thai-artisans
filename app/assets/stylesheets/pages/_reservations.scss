@@ -1,5 +1,5 @@
 .section-reservation {
-  background-color: $black;
+  background-color: $down-black;
   min-height: 100vh;
   padding-top: 100px;
 }
@@ -9,11 +9,14 @@
   background-repeat: no-repeat;
   background-size: contains;
   height: 150px;
-  background-color: $black;
+  background-color: $down-black;
 }
 
 // ***********  RESERVATION NEW  *****************
-
+#reservation-subheader {
+  color: $white;
+  font-weight: bold;
+}
 .ta-form-group {
   position: relative;
 }
@@ -41,7 +44,7 @@ input#reservation_message {
   border-left: none;
   box-shadow: none;
   border-radius: 0px;
-  background-color: $black;
+  background-color: $down-black;
   color: $white;
 }
 p.errors-input {
@@ -51,7 +54,9 @@ p.errors-input {
 .hidden {
   display: none;
 }
-
+.btn.disabled {
+  opacity: 1 !important;
+}
 // ***********  RESERVATION CREATE  *****************
 
 .reservation-create {

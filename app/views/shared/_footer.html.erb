@@ -1,23 +1,24 @@
 <footer>
-  <div class="footer-header mt-5">
+  <div class="footer-header">
     <%= image_tag('logo-footer.webp') %>
+
     <div class="icone-info">
-      <i class="fas fa-mobile-alt fa-2x"></i>
-      <p>+41 22 717 9090</p>
+      <i class="fas fa-mobile-alt"></i>
+      <p>+41 22 792 1900</p>
     </div>
     <div class="icone-info">
-      <i class="far fa-envelope fa-2x"></i>
+      <i class="far fa-envelope"></i>
       <p>contact@thai-artisans.ch</p>
     </div>
     <div class="icone-info">
-      <i class="fas fa-map-marker-alt fa-2x"></i>
-      <p>46 Route de Chancy, 1213 Onex</p>
+      <i class="fas fa-map-marker-alt"></i>
+      <p>Route de Chancy 76, 1213 Onex</p>
     </div>
     <div class="icone-info">
-      <i class="far fa-clock fa-2x"></i>
-      <p>
-        LU-SA: ..... 12h-14h <br>
-        MA-SA: ..... 19h-23h
+      <i class="far fa-clock"></i>
+      <p class="left">
+        Lundi-Samedi : ...... 12-14H30 / 19-23H <br>
+        Dimanche : ............... FERMÉ
       </p>
     </div>
   </div>
@@ -29,10 +30,10 @@
       </div>
       <div class="links-list-online">
         <%= link_to 'https://www.facebook.com/latabledesartisans', class:"social-link", target: :_blank do %>
-          <i class="fab fa-facebook-square fa-3x"></i>
+          <i class="fab fa-facebook-square fa-2x"></i>
         <% end %>
         <%= link_to 'https://www.facebook.com/latabledesartisans', class:"social-link", target: :_blank do %>
-          <i class="fab fa-instagram-square fa-3x"></i>
+          <i class="fab fa-instagram-square fa-2x"></i>
         <% end %>
       </div>
     </div>
@@ -44,7 +45,7 @@
       <div class="links-list">
         <ul>
           <li><%= link_to 'Accueil', root_path, class:"footer-link" %></li>
-          <li><%= link_to 'Réservation', root_path, class:"footer-link" %></li>
+          <li><%= link_to 'Réservation', new_reservation_path, class:"footer-link" %></li>
           <li><%= link_to 'Menu', menu_path, class:"footer-link" %></li>
           <li><%= link_to 'Contact', contact_path, class:"footer-link" %></li>
         </ul>

@@ -1,29 +1,166 @@
-<div class="container-opening">
-  <h1>PROCHAINEMENT OUVERTURE</h1>
-  <div class="address">
-    <i class="fas fa-map-marker-alt"></i>
-    <P>Route de Chancy 76, 1213 Onex</P>
+<section class="section-home-page">
+  <div class="resto-wrapper">
+    <div class="resto d-flex flex-row">
+      <%= image_tag('logo-50-gold.webp') %>
+      <h1>Thaï Artisans</h1>
+    </div>
+    <p class="home-text text-center">RESTAURANT</p>
   </div>
-  <div class="countdown">
-    <div class="container-day">
-      <h3 class="day">Time</h3>
-      <h3>Jrs</h3>
+  <div class="resto-info d-flex flex-column">
+    <div class="resto-info-details d-flex flex-row">
+      <i class="fas fa-map-marker-alt fa-home"></i><p>Route de Chancy 76, Onex</p>
     </div>
-    <div class="container-hour">
-      <h3 class="hour">Time</h3>
-      <h3>Hrs</h3>
-    </div>
-    <div class="container-minute">
-      <h3 class="minute">Time</h3>
-      <h3>Min</h3>
-    </div>
-    <div class="container-second">
-      <h3 class="second">Time</h3>
-      <h3>Sec</h3>
+    <br>
+    <div class="resto-info-details d-flex flex-row">
+      <i class="fas fa-phone fa-home"></i><p>022.792.19.00</p>
     </div>
   </div>
-  <%= image_tag('ta-brand.webp')%>
-  <div class="reservation">
-    <p>Réservation: contact@thai-artisans.ch</p>
+  <div class="resto-link text-center">
+    <%= link_to t('btn.reserve'), new_reservation_path, class: "btn btn-gold" %>
   </div>
-</div>
+</section>
+<section class="section-welcome">
+  <div class="welcome-wrapper">
+    <div class="welcome-title">
+      <%= image_tag('logo-50-gold.webp') %>
+      <h2><%= t('welcome.title') %></h2>
+      <%= image_tag('logo-50-reverse.webp') %>
+    </div>
+    <div class="welcome-text">
+      <p><%= t('welcome.msg1')  %></p>
+      <p><%= t('welcome.msg2')  %></p>
+      <p><%= t('welcome.msg3')  %></p>
+      <p><%= t('welcome.msg4')  %></p>
+      <div class="welcome-link">
+        <%= link_to t('btn.contact'), contact_path, class: "btn btn-gold" %>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="section-home-menu">
+  <div class="section-title">
+    <h2><%= t('carte.title') %></h2>
+  </div>
+  <div class="section-subtitle">
+    <p>
+      <%= t('carte.s1') %> <br>
+      <%= t('carte.s2') %>
+    </p>
+  </div>
+  <div class="vignettes-wrapper">
+    <div class="dbl-vignettes">
+      <div class="vignette thai-menu">
+        <div class="vignette-title">
+          <h3>Pad Thaï</h3>
+        </div>
+        <div class="vignette-content">
+          <p>
+            <%= t('carte.thai.dish1') %> <br>
+            <%= t('carte.thai.dish1b') %>
+          </p>
+        </div>
+      </div>
+      <div class="vignette-img">
+        <%= image_tag('img1.webp') %>
+      </div>
+    </div>
+    <div class="dbl-vignettes v-reverse">
+      <div class="vignette">
+        <div class="vignette-title">
+          <h3>Khao Pad</h3>
+        </div>
+        <div class="vignette-content">
+          <p>
+            <%= t('carte.thai.dish2') %> <br>
+            <%= t('carte.thai.dish2b') %>
+          </p>
+        </div>
+      </div>
+      <div class="vignette-img">
+        <%= image_tag('img2.webp') %>
+      </div>
+    </div>
+    <div class="dbl-vignettes">
+      <div class="vignette thai-menu">
+        <div class="vignette-title">
+          <h3>Som Tam</h3>
+        </div>
+        <div class="vignette-content">
+          <p>
+            <%= t('carte.thai.dish3') %>
+          </p>
+        </div>
+      </div>
+      <div class="vignette-img">
+        <%= image_tag('img3.webp') %>
+      </div>
+    </div>
+    <div class="dbl-vignettes v-reverse">
+      <div class="vignette thai-menu">
+        <div class="vignette-title">
+          <h3>Pad Kra Pao</h3>
+        </div>
+        <div class="vignette-content">
+          <p>
+            <%= t('carte.thai.dish4') %> <br>
+            <%= t('carte.thai.dish4b') %>
+          </p>
+        </div>
+      </div>
+      <div class="vignette-img">
+        <%= image_tag('img4.webp') %>
+      </div>
+    </div>
+    <div class="dbl-vignettes">
+      <div class="vignette thai-menu">
+        <div class="vignette-title">
+          <h3>Tom Kha Gai</h3>
+        </div>
+        <div class="vignette-content">
+          <p>
+            <%= t('carte.thai.dish5') %>
+          </p>
+        </div>
+      </div>
+      <div class="vignette-img">
+        <%= image_tag('img5.webp') %>
+      </div>
+    </div>
+  </div>
+  <div class="welcome-link">
+    <%= link_to t('btn.carte'), menu_path, class:"btn btn-gold" %>
+  </div>
+</section>
+<section class="section-acces">
+  <div class="info-window">
+    <div class="window-title text-center my-5">
+      <h2><%= t('info.title') %></h2>
+    </div>
+    <div class="info-acces mt-3">
+      <div class="info-acces-details d-flex flex-row">
+        <i class="fas fa-map-marker-alt fa-acces"></i>
+        <p>Route de Chancy 76, <br> 1213 Onex</p>
+      </div>
+      <div class="info-acces-details d-flex flex-row mt-2">
+        <i class="fas fa-bus fa-acces"></i>
+        <div class="acces d-flex flex-column">
+          <%= image_tag('tpg.webp') %>
+          <p>Arrêt: BANDOL</p>
+        </div>
+      </div>
+    </div>
+    <div class="info-opening mt-4">
+      <div class="open d-flex flex-row">
+        <p class="days"><i class="fas fa-clock fa-acces"></i><%= t('info.date1') %></p>
+        <p class="timer">12-14H30 / 19-23H</p>
+      </div>
+      <div class="closed d-flex flex-row">
+        <p class="days"><%= t('info.date2') %> </p>
+        <p class="timer"><%= t('info.date3') %></p>
+      </div>
+    </div>
+  </div>
+  <div class="map" >
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2762.1846000155165!2d6.106954375027311!3d46.18688508725915!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c7b44300aaa63%3A0x2eedd4469c576d4f!2sRte%20de%20Chancy%2076%2C%201213%20Onex%2C%20Switzerland!5e0!3m2!1sen!2sfr!4v1652153007931!5m2!1sen!2sfr" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+</section>

@@ -3,11 +3,17 @@ footer {
   background-color: $down-black;
   color: $footer;
   z-index: initial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .footer-header {
   display: block;
   text-align: center;
-  padding: 50px 0px;
+  padding: 70px 0px 40px 0px;
+}
+.footer-header img {
+  margin-bottom: 3rem;
 }
 .icone-info {
   display: flex;
@@ -23,10 +29,14 @@ footer {
 .icone-info p {
   margin-bottom: 0px;
 }
+p.left {
+  text-align: left;
+}
 .footer-links {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-flow: row-reverse;
+  justify-content: center;
+  column-gap: 15rem;
 }
 .links-title p {
   margin-bottom: 0px;
@@ -35,7 +45,7 @@ hr.lign {
   margin-top: .5rem;
   margin-bottom: 1rem;
   width: 50px;
-  color: $footer;
+  color: $gold;
   height: 3px;
   opacity: 1;
 }
@@ -45,15 +55,10 @@ hr.lign {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-  width: 300px;
-}
-.links-media {
-  flex: flex-reverse;
 }
 .links-list-online {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
 }
 .social-link {
   margin: 0 .5rem;
@@ -81,8 +86,7 @@ hr.lign {
 }
 .copyright {
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 1rem;
+  padding: 2rem 0;
 }
 .copyright p {
   font-size: 12px;

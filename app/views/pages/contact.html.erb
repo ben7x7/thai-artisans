@@ -1,22 +1,18 @@
 <section class="section-contact">
-  <div class="header-section">
-    <div class="header-title text-center">
+  <div class="contact-form-wrapper">
+    <div class="contact-form-title">
       <h1 class="gold"><%= t('contact.title') %></h1>
     </div>
-    <div class="header-subtitle text-center">
-      <p >Let's talk about your project !</p>
+    <div class="contact-form-subtitle text-center">
+      <p><%= t('contact.subtitle') %></p>
     </div>
-  </div>
-  <div class="contact-form-wrapper">
-    <h1 class="form-title">  </h1>
-    <p class="subtitle">Let's talk about your project !</p>
     <div class="form-wrapper">
-      <form action="https://formspree.io/f/XXXXXXXXX" method="POST" >
+      <form action="https://formspree.io/f/mrgjrldk" method="POST" >
         <input type="text" name="name" id="full-name" autocomplete="off" required placeholder="<%= t('contact.label.name') %>" />
         <input type="email" name="_replyto" autocomplete="off" required placeholder="<%= t('contact.label.mail') %>"/>
         <textarea row="3" name="message" id="message" required placeholder="<%= t('contact.label.message') %>"></textarea>
         <input type="hidden" name="_subject" id="email-subject" value="Formulaire SAP">
-        <input type="submit" value="<%= t('contact.btn') %>" class="btn btn-gold">
+        <input type="submit" value="<%= t('btn.send') %>" class="btn btn-gold btn-full">
       </form>
     </div>
   </div>

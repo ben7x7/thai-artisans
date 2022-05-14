@@ -13,10 +13,10 @@
 }
 .nav-link,
 .nav-pills {
-  color: $orange;
+  color: $down-black;
   text-decoration: none;
   :hover {
-    color: $orange;
+    color: $gold;
     cursor: pointer;
   }
 }
@@ -29,9 +29,9 @@
   display: block;
   position: relative;
   margin: 0.25rem;
-  padding: 0.8rem;
+  padding: 1.2rem 0.8rem;
   width: 23.125rem;
-  height: 5rem;
+  height: 5.5rem;
   background-color: none;
   border: none;
   border-radius: 8px;
@@ -57,7 +57,7 @@
   color: $dark-gray;
 }
 small.tab {
-  color: $orange;
+  color: $gray;
   font-style: italic;
   font-weight: 200;
 }

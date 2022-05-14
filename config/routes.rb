@@ -2,8 +2,6 @@ Rails.application.routes.draw do
   scope '(:locale)', locale: /fr|en/ do
     root to: 'pages#home'
 
-    get 'template', to: 'pages#template', as: :template
-
     get 'contact', to: 'pages#contact', as: :contact
     get 'kookies', to: 'pages#kookies', as: :kookies
     get 'mentions', to: 'pages#mentions', as: :mentions

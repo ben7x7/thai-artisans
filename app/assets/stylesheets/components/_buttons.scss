@@ -5,16 +5,24 @@
   font-size: 20px;
   font-weight: bold;
 }
+.btn-full {
+  width: 100%;
+}
 .btn-gold {
-  background-color: $down-black;
-  color: $gold;
-  border: solid 2px $gold;
-  border-radius: 8px;
+  background-color: $gold;
+  color: $white;
+  text-shadow: 0px 0px 1px $down-gray,
+               1px -1px 3px $black;
+  border: solid 3px $gold;
 }
 .btn-gold:hover {
-  background-color: $dark-gray;
-  text-shadow: none;
+  background-color: $gold;
   color: $gold;
+}
+.btn-gold:focus {
+  color: $down-black;
+  text-shadow: 0px 0px 1px $light-gray,
+               1px -1px 3px $white;
 }
 .btn-orange {
   background-color: $orange;

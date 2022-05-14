@@ -5,16 +5,16 @@
       <span id="brand">Thaï Artisans</span>
     <% end %>
   </div>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <i class="fas fa-ellipsis-v"></i>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <i class="fas fa-bars"></i>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
-      <%= link_to t('link.home'), root_path, class: "nav-link" %>
-      <%= link_to t('link.reservation'), root_path, class: "nav-link" %>
-      <%= link_to t('link.menu'), menu_path, class: "nav-link" %>
-      <%= link_to t('link.contact'), contact_path, class: "nav-link" %>
-      <select class="form-select" aria-label="Default select example">
+      <%= link_to t('nav.home'), root_path, class: "nav-link" %>
+      <%= link_to t('nav.reservation'), new_reservation_path, class: "nav-link" %>
+      <%= link_to t('nav.menu'), menu_path, class: "nav-link" %>
+      <%= link_to t('nav.contact'), contact_path, class: "nav-link" %>
+      <select class="form-select" id="language" aria-label="Default select example">
         <option selected>FR</option>
         <option value="1"><%= link_to 'FR', url_for(locale: 'fr') %></option>
         <option value="2"><%= link_to 'EN', url_for(locale: 'en') %></option>

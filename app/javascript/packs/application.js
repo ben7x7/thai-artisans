@@ -19,25 +19,25 @@ require("channels")
 
 import "bootstrap"
 
-const countDown = () => {
-  const countDate = new Date('May 9, 2022 12:00:00').getTime();
-  const now = new Date().getTime();
-  const gap = countDate - now;
+// const countDown = () => {
+//   const countDate = new Date('May 9, 2022 12:00:00').getTime();
+//   const now = new Date().getTime();
+//   const gap = countDate - now;
 
-  const second = 1000;
-  const minute = second * 60;
-  const hour = minute * 60;
-  const day = hour * 24;
+//   const second = 1000;
+//   const minute = second * 60;
+//   const hour = minute * 60;
+//   const day = hour * 24;
 
-  const textDay = Math.floor(gap / day);
-  const textHour = Math.floor((gap % day) / hour);
-  const textMinute = Math.floor((gap % hour) / minute);
-  const textSecond = Math.floor((gap % minute) / second);
+//   const textDay = Math.floor(gap / day);
+//   const textHour = Math.floor((gap % day) / hour);
+//   const textMinute = Math.floor((gap % hour) / minute);
+//   const textSecond = Math.floor((gap % minute) / second);
 
-  document.querySelector('.day').innerText = textDay;
-  document.querySelector('.hour').innerText = textHour;
-  document.querySelector('.minute').innerText = textMinute;
-  document.querySelector('.second').innerText = textSecond;
-};
+//   document.querySelector('.day').innerText = textDay;
+//   document.querySelector('.hour').innerText = textHour;
+//   document.querySelector('.minute').innerText = textMinute;
+//   document.querySelector('.second').innerText = textSecond;
+// };
 
-setInterval(countDown, 1000);
+// setInterval(countDown, 1000);

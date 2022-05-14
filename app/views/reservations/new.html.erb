@@ -6,7 +6,7 @@
         <div class="reservation-header text-center">
           <h2><%= t('reservation.new.title') %></h2>
         </div>
-        <div class="reservation-subheader text-center text-muted">
+        <div class="reservation-subheader text-center">
           <p id="reservation-subheader">
             <%= t('reservation.new.subtitle1') %> <br>
             <%= t('reservation.new.subtitle2') %>
@@ -77,20 +77,20 @@
                     <i class="fas fa-pencil"></i>
                   </div>
                 </div>
-                </div>
-                <div class="hidden">
-                  <%= f.label :nickname %>
-                  <%= f.text_field :nickname, hint: 'Leave it blank' %>
-                </div>
+              </div>
+              <div class="hidden">
+                <%= f.label :nickname %>
+                <%= f.text_field :nickname, hint: 'Leave it blank' %>
               </div>
             </div>
+
             <div class="row">
               <div class="col">
                 <div class="text-center">
-                  <%= f.submit 'RESERVER UNE TABLE', class: "btn-gold disabled" %>
+                  <%= f.submit t('btn.reserve'), class: "btn btn-gold disabled btn-full" %>
                   <br>
                   <br>
-                  <a class="home-link" href="/"><%= t('link.home') %></a>
+                  <a class="home-link" href="/"><%= t('btn.home') %></a>
                 </div>
               </div>
             </div>

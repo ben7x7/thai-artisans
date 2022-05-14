@@ -1,51 +1,4 @@
-.container-opening {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  border: solid 3px $gold;
-}
-
-.countdown {
-  display: flex;
-  width: 400px;
-  justify-content: space-around;
-  padding-top: 30px;
-}
-
-.container-day,
-.container-hour,
-.container-minute,
-.container-second {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-img {
-  margin: 40px 0px;
-}
-
-.address {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.address p {
-  margin-bottom: 0px;
-}
-
-.fas {
-  color: $gold;
-  margin-right: 15px;
-}
-
-.reservation p {
-  margin-top: 30px;
-}
 // *************** SECTION HOME *******************
-
 
 .section-home-page {
   height: 100vh;
@@ -56,8 +9,7 @@ img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 500px;
-  margin: auto;
+  text-align: center;
 }
 .resto {
   margin-top: 50px;
@@ -79,61 +31,232 @@ p.home-text {
   align-items: center;
   margin: 60px 0px;
 }
+.fa-home {
+  color: $gold;
+  margin-right: 10px;
+}
 .resto-info-details p {
   margin-bottom: 0px;
 }
 
-
 // *************** SECTION WELCOME *******************
-.section-welcome  {
-  background-color: $black;
-  background-image: image_url('logo-xl.webp');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100vh;
+.section-welcome {
+  background-color: $gold;
 }
-.welcome {
-  background-color: $white;
-  position: relative;
-  max-width: 700px;
-  margin-inline: auto;
-  padding: 4rem;
-  box-shadow: 0px 10px 30px rgba(0,0,0,0.2);
-  border-radius: 15px;
-  opacity: 0.8;
+.welcome-title {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  max-width: 370px;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid $gold;
+  margin: 0px auto;
 }
-// .welcome-logo-right {
-//   position: absolute;
-//   bottom: 0;
-//   right: 2rem;
-//   opacity: 0.3;
-// }
-// .welcome-logo-left {
-//   position: absolute;
-//   bottom: 100px;
-//   left: 2rem;
-//   opacity: 0.3;
-// }
-.welcome h2 {
-  font-size: 40px;
+.welcome-title h2 {
+  font-size: 48px;
   color: $dark-gray;
-  margin-bottom: 60px;
   text-align: center;
 }
-.welcome p {
+.reverse {
+  transform: translateX(-100%);
+}
+.welcome-wrapper {
+  margin: 50px auto;
+  max-width: 800px;
+  background-color: $white;
+  border-radius: 14px;
+  padding: 5rem;
+  border: 5px solid $gold;
+}
+.welcome-text {
+  background-color: $white;
+  margin: auto;
+  text-align: justify;
+  padding-top: 5rem;
+}
+.welcome-text p {
   color: $dark-gray;
 }
-// *************** SECTION MENU *******************
-// *************** SECTION ACCES *********************
-
-.acces span {
-  border: solid 1px $gold;
-  border-radius: 50%;
-  height: 40px;
-
-  width: 40px;
+.welcome-link {
+  margin-top: 3rem;
+  text-align: center;
 }
-.map {
+
+// *************** SECTION MENU *******************
+.section-home-menu {
+  background-color: $down-black;
+}
+.section-title {
+  text-align: center;
+}
+.section-title h2 {
+  font-size: 48px;
+}
+.section-subtitle {
+  max-width: 700px;
+  margin: 2rem auto;
+  color: $white;
+  font-weight: bold;
+  text-align: center;
+}
+.vignettes-wrapper {
+  max-width: 768px;
+  margin: auto;
+}
+.dbl-vignettes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.v-reverse {
+  flex-flow: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.vignette {
+  width: 350px;
+  border: solid 1px $gold;
+  border-radius: 5px;
+  margin: 5px;
+  background-color: $down-black;
+}
+.vignette-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 3rem;
+}
+.vignette-title h3 {
+  color: $gold;
+  font-size: 28px;
+  margin-bottom: 0px;
+}
+.vignette-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $down-black;
+  height: 9.5rem;
+  padding: .5rem;
+}
+.vignette-content p {
+  text-align: center;
+  color: $light-gray;
+}
+.vignette-img {
+  width: 350px;
+  border: solid 1px $gray;
+  border-radius: 5px;
+  margin: 5px;
+}
+// *************** SECTION ACCES *********************
+.section-acces {
   background-color: #F0F3F4;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.info-window {
+  background-color: #F0F3F4;
+  width: 400px;
+  height: 400px;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow:
+    -5px -5px 9px rgba(155,155,155,0.2),
+    5px 5px 9px rgba(0,0,0,0.2),
+    inset -13px -13px 20px rgba(0,0,0,0.1),
+    inset 13px 13px 20px white;
+}
+.window-title h2 {
+  color: $dark-gray;
+}
+.info-acces {
+  padding-left: 4rem;
+}
+.info-acces-details {
+  align-items: baseline;
+}
+.info-acces-details p {
+  color: $dark-gray;
+}
+.fa-acces {
+  color: $dark-gray;
+  margin-right: 10px;
+}
+.info-opening {
+}
+.info-opening p {
+  color: $dark-gray;
+}
+.open,
+.closed {
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+}
+p.days {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  align-items: baseline;
+  margin-bottom: .7rem;
+}
+p.timer {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  font-weight: bold;
+  color: $dark-gray;
+  padding-left: 1rem;
+  margin-bottom: .7rem;
+}
+
+.map {
+  height: 400px;
+  width: 400px;
+  margin: 1rem;
+  border-radius: 8px;
+}
+
+// *************** MOBILE DEVICE *********************
+@media(max-width: 991px) {
+  .footer-links {
+    display: block;
+  }
+  .links-media,
+  .links-site,
+  .links-mentions {
+    margin-bottom: 3rem;
+  }
+}
+
+@media(max-width: 721px) {
+  .v-reverse {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media(max-width: 576px) {
+  .resto h1 {
+    font-size: 36px;
+    padding: 0px;
+  }
+  p.home-text {
+    width: 100%;
+    margin: 20px 0px;
+    font-size: 22px;
+    letter-spacing: 17px;
+  }
+  .welcome-wrapper {
+    padding: 3rem 1rem;
+  }
+  .info-window {
+    min-width: 350px;
+  }
+  .map {
+    width: 350px;
+  }
 }
