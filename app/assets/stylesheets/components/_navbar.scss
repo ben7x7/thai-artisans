@@ -10,6 +10,7 @@
 }
 .navbar .navbar-collapse {
   flex-grow: 0;
+  padding-right: 2rem;
 }
 a.navbar-brand {
   display:flex;
@@ -35,21 +36,6 @@ a.navbar-brand {
 }
 a#navbarDropdown.dropdown-toggle {
   color: $gold;
-}
-a.nav-link.dropdown-item {
-  color: #074E81;
-  text-decoration: none;
-  text-align: center;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.dropdown-menu {
-  position: absolute;
-  top: 90px;
-  right: 30px;
-  width: 100px;
 }
 .fa-bars {
   color: $gold;

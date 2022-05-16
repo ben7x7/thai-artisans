@@ -18,6 +18,7 @@
       <div class="col-lg-8">
         <div class="reservation-form my-2">
           <%= form_for @reservation do |f| %>
+
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group ta-form-group">
@@ -68,6 +69,7 @@
                 <p class="errors-input"><%= show_errors(@reservation, :time) %></p>
               </div>
             </div>
+
             <div class="row">
               <div class="col">
                 <div class="form-group ta-form-group">
@@ -85,15 +87,14 @@
             </div>
 
             <div class="row">
-              <div class="col">
-                <div class="text-center">
-                  <%= f.submit t('btn.reserve'), class: "btn btn-gold disabled btn-full" %>
-                  <br>
-                  <br>
-                  <a class="home-link" href="/"><%= t('btn.home') %></a>
-                </div>
+              <div class="col text-center">
+                <%= f.submit t('btn.reserve'), class: "btn btn-gold" %>
+                <br>
+                <br>
+                <a class="home-link" href="/"><%= t('btn.home') %></a>
               </div>
             </div>
+
           <% end %>
         </div>
       </div>
