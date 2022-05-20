@@ -1,4 +1,4 @@
-class Reservation < MailForm::Base
+class Reservation < ActionMailer::Base
 
   attributes :name, validate: true
   attributes :email, validate: /\A[^@\s]+@[^@\s]+\z/i
@@ -7,7 +7,7 @@ class Reservation < MailForm::Base
   attributes :date, validate: :check_date_valid?
   attributes :time, validate: :check_time_valid?
   attributes :message
-  attributes :nickname, captcha: true
+
 
   def check_date_valid?
     if date == Date.today.strftime("%Y-%m-%d")

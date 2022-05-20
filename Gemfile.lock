@@ -110,9 +110,6 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
-    mail_form (1.9.0)
-      actionmailer (>= 5.2)
-      activemodel (>= 5.2)
     marcel (1.0.2)
     matrix (0.4.2)
     method_source (1.0.0)
@@ -174,7 +171,6 @@ GEM
       ffi (~> 1.0)
     regexp_parser (2.2.1)
     rexml (3.2.5)
-    ruby_http_client (3.5.5)
     rubyzip (2.3.2)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
@@ -190,8 +186,6 @@ GEM
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)
-    sendgrid-ruby (6.6.2)
-      ruby_http_client (~> 3.4)
     spring (2.1.1)
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
@@ -244,7 +238,6 @@ DEPENDENCIES
   font-awesome-sass
   jbuilder (~> 2.7)
   listen (~> 3.2)
-  mail_form
   pg (>= 0.18, < 2.0)
   pry-byebug
   pry-rails
@@ -252,7 +245,6 @@ DEPENDENCIES
   rails (~> 6.0.4, >= 6.0.4.7)
   sass-rails (>= 6)
   selenium-webdriver
-  sendgrid-ruby
   simple_form!
   spring
   spring-watcher-listen (~> 2.0.0)
