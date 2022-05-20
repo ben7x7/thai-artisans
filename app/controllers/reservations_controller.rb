@@ -4,12 +4,17 @@ class ReservationsController < ApplicationController
   end
 
   def create
-    @reservation = Reservation.new(params[:reservation])
-    if @reservation.deliver
-      flash.now[:error] = nil
+    @reservation = Reservation.new(reservation_params)
+    if @reservation.save
+      ReservationMailer.send_reservation_mail(@reservation).deliver
+      redirect_to(@reservation, :notice => 'Réservation Envoyée !')
     else
-      flash.now[:error] = 'Cannot send message.'
-      render :new
+      render :action => new
     end
   end
+
+  private
+
+  def reservation_params
+    params.require(:reservation).permit(:name, :mail, :phone, :pax, :date, :time, :message)
 end

@@ -1,4 +1,4 @@
-class Reservation < ActionMailer::Base
+class Reservation < ApplicationMailer::Base
 
   attributes :name, validate: true
   attributes :email, validate: /\A[^@\s]+@[^@\s]+\z/i
