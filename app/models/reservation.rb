@@ -40,6 +40,7 @@ class Reservation < MailForm::Base
   end
 
   def headers
+
     {
       :subject => "New reservation",
       :to => "contact@thai-artisans.ch",

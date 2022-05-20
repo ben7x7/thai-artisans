@@ -3,6 +3,7 @@
 require 'sendgrid-ruby'
 include SendGrid
 
+
 from = Email.new(email: 'contact@thai-artisans.ch')
 to = Email.new(email: 'contact@thai-artisans.ch')
 subject = 'Sending with SendGrid is Fun'
