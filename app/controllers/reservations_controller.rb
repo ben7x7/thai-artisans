@@ -1,13 +1,13 @@
-class ReservationsController < ApplicationController
+class BookingsController < ApplicationController
   def new
-    @reservation = Reservation.new
+    @booking = Booking.new
   end
 
   def create
-    @reservation = Reservation.new(reservation_params)
-    if @reservation.save
-      ReservationMailer.send_reservation_mail(@reservation).deliver
-      redirect_to(@reservation, :notice => 'Réservation Envoyée !')
+    @booking = Booking.new(booking_params)
+    if @booking.save
+      ReservationMailer.send_reservation_mail(@booking).deliver
+      redirect_to(@booking, :notice => 'Réservation Envoyée !')
     else
       render :action => new
     end
@@ -15,6 +15,6 @@ class ReservationsController < ApplicationController
 
   private
 
-  def reservation_params
-    params.require(:reservation).permit(:name, :mail, :phone, :pax, :date, :time, :message)
+  def booking_params
+    params.require(:booking).permit(:name, :email, :phone, :pax, :date, :time, :message)
 end

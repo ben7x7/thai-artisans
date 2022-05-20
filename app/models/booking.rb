@@ -1,4 +1,4 @@
-class Reservation < ApplicationMailer::Base
+class Booking < ApplicationRecord
 
   attributes :name, validate: true
   attributes :email, validate: /\A[^@\s]+@[^@\s]+\z/i
@@ -7,7 +7,6 @@ class Reservation < ApplicationMailer::Base
   attributes :date, validate: :check_date_valid?
   attributes :time, validate: :check_time_valid?
   attributes :message
-
 
   def check_date_valid?
     if date == Date.today.strftime("%Y-%m-%d")
@@ -38,15 +37,4 @@ class Reservation < ApplicationMailer::Base
       errors.add(:time, 'Lunch: 12:00-14:00, Diner: 19:00-22:00')
     end
   end
-
-  def headers
-
-    {
-      :subject => "New reservation",
-      :to => "contact@thai-artisans.ch",
-      :from => "contact@thai-artisans.ch"
-    }
-  end
-
 end
-

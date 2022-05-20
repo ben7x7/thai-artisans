@@ -17,7 +17,7 @@
     <div class="row justify-content-lg-center">
       <div class="col-lg-8">
         <div class="reservation-form my-2">
-          <%= form_for @reservation do |f| %>
+          <%= form_for @booking do |f| %>
 
             <div class="row">
               <div class="col-md-6">
@@ -58,7 +58,7 @@
                     <i class="far fa-calendar-check"></i>
                   </div>
                 </div>
-                <p class="errors-input"><%= show_errors(@reservation, :date) %></p>
+                <p class="errors-input"><%= show_errors(@booking, :date) %></p>
                 <div class="form-group ta-form-group">
                   <%= f.label :time, class: "sr-only" %>
                   <%= f.time_field :time, required: true %>
@@ -66,7 +66,7 @@
                     <i class="far fa-clock"></i>
                   </div>
                 </div>
-                <p class="errors-input"><%= show_errors(@reservation, :time) %></p>
+                <p class="errors-input"><%= show_errors(@booking, :time) %></p>
               </div>
             </div>
 
@@ -97,5 +97,4 @@
     </div>
   </div>
 </div>
-
 

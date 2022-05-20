@@ -7,7 +7,7 @@ Rails.application.routes.draw do
     get 'mentions', to: 'pages#mentions', as: :mentions
     get 'menu', to: 'pages#menu', as: :menu
     get 'rgpd', to: 'pages#rgpd', as: :rgpd
-    resources :reservations, only: [:new, :create]
+    resources :bookings, only: [:new, :create]
 
     get '/404', to: 'errors#not_found', via: :all
     get '/422', to: 'errors#unacceptable', via: :all
