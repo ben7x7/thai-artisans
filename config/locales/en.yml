@@ -1,33 +1,112 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  nav:
+    reservation: "RESERVATION"
+    home: "HOME"
+    menu: "MENU"
+    contact: "CONTACT"
+  btn:
+    reserve: "BOOK A TABLE"
+    contact: "CONTACT US"
+    home: "HOME"
+    carte: "GET FULL MENNU"
+    send: "SEND"
+  welcome:
+    title: "Welcome"
+    msg1: "You knew la Table des Artisans. Its team is now welcoming you in their new establishment Thaï Artisans."
+    msg2: "You will experience an authentic escape into the tasty and flavored world of the Traditional Thai Cuisine. A delicious and fabulous experience to share with your friends, familly, clients or employees."
+    msg3: "Thaï Artisans provides takeaways and tailored outside catering services. It also offers its own premises for your professional or personal events. We can host up to 60 people."
+    msg4: "For more information, feel free to contact us."
+  carte:
+    title: "A La Carte"
+    s1: "Discover or get the essentiel Thai specialties."
+    s2: "Get ready for an exotic tasting !"
+    thai:
+      dish1: "stir-fried rice noodles with tofu, soya sprouts and a delicious tamarind dressing."
+      dish1b: "Variants proposed: chicken, shrimps."
+      dish2: "Fried rice with vegetables, meat, eggs, garlic, fish dressing and soya dressing."
+      dish2b: "Variants proposed: chicken, pork, beef and shrimps."
+      dish3: "Papaya salad with garlic, tomatos, fresh chilies, carots, peanuts, fish dressing and fresh green lemon juice."
+      dish4: "Dish with garlic and Thai basil, fresh chilies, fish dressing, oyster dressing and soya dressing."
+      dish4b: "Variants proposed: chicken, pork, beef and shrimps."
+      dish5: "Chicken soup with lemongrass and coconut milk, fresh chilies, coriander and green lemon juice."
+  info:
+    title: "Join Us"
+    date1: "Monday - Saterday :"
+    date2: "Sunday :"
+    date3: "CLOSED"
+  contact:
+    title: "Contact Us"
+    subtitle: "Let's talk about your project !"
+    label:
+      name: "Name:"
+      mail: "Email:"
+      msg: "Message:"
+  reservation:
+    create:
+      greeting: "Thank you for your reservation !"
+      subtitle: "A confirmation will be mailed to you shortly."
+    new:
+      title: "Online Reservation"
+      subtitle1: "For today's reservation,"
+      subtitle2: "please contact the restaurant at +41.22.792.1900 "
+  menu:
+    title: "Our Menu"
+    subtitle1: "All dishes are available to takeaway with 10% discount."
+    subtitle2: "At lunch only, we propose a daily menu formula for 19. Frs"
+    pills:
+      starter: "Starters"
+      main: "Mains"
+      noodle: "Noodles"
+      dessert: "Desserts"
+    m1:
+      starter1: "Chicken Satay"
+      starter2: "Deep-fried shrimps and chicken dumplings"
+      starter3: "Vegetarian springrolls"
+      starter4: "Steamed shrimps and chicken dumplings"
+      starter5: "Deep-fried shrimps"
+      starter6: "Mixed starters (for 2 pers.)"
+      soup1: "Tom-Yam soup with shrimps"
+      soup2: "Tom-Kha soup with chicken and coconut milk"
+      soup3: "Tom-Kha soup with mushrooms and coconut milk"
+      salad1: "Spicy beef salad"
+      salad2: "Spicy minced chicken salad"
+      salad3: "Spicy papaya salad in Som Tam Thaï style"
+    m2:
+      main1: "Red curry chicken or pork"
+      main2: "Panang cury chicken or pork"
+      main3: "Green curry chicken or pork"
+      main4: "Stir-fried chicken or pork with fresh chilies and basil leaves"
+      main5: "Sweet & sour chicken or pork"
+      main6: "Stir-fried chicken or pork with ginger and mushrooms"
+      main7: "Stir-fried chicken or pork with cashew nuts and onions"
+      main8: "Stir-fried chicken or pork with garlic and pepper"
+      main9: "Red curry duck and pineapples"
+      main10: "Stir-fried duck with black pepper"
+      main11: "Stir-fried duck with ginger and mushrooms"
+      main12: "Red curry beef"
+      main13: "Panang curry beef"
+      main14: "Green curry beef"
+      main15: "Stir-fried beef with oyster dressing and mushrooms"
+      main16: "Stir-fried beef with garlic and pepper"
+      main17: "Stir-fried beef with fresh chilies and basil leaves"
+      main18: "Red curry fish or shrimps"
+      main19: "Green curry fish or shrimps"
+      main20: "Sweet & sour shrimps"
+      main21: "Stir-fried shrimps with curry powder"
+      main22: "Stir-fried shrimps with garlic and pepper"
+    m3:
+      noodle1: "Stir-fried rice noodles with shrimps or chicken in Thai style"
+      noodle2: "Stir-fried rice noodles with beef or pork or chicken Pad Sea Ew"
+      noodle3: "stir-fried mixed vegetables with oyster dressing"
+      noodle4: "Fried rice with chicken or pork or shrimps"
+      noodle5: "Spicy fried rice chicken or pork with fresh chilies and basil"
+      noodle6: "Steamed rice"
+      noodle7: "Fried rice with garlic and chive"
+      noodle8: "Stir-fried rice noodles with garlic and chive"
+    m4:
+      dessert1: "Half Thai mango"
+      dessert2: "Half Thai mango with sticky rice"
+      dessert3: "Pineapple confit with Cointreau, ice cream"
+      dessert4: "Exotic fruits salad"
+      dessert5: "Chestnut & coconut milk flan "
+      dessert6: "Ice cream or sorbet (per scoop)"
