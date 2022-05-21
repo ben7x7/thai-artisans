@@ -6,10 +6,9 @@ class BookingsController < ApplicationController
   def create
     @booking = Booking.new(booking_params)
     if @booking.save
-      ReservationMailer.send_reservation_mail(@booking).deliver
-      redirect_to(@booking, :notice => 'Réservation Envoyée !')
+      ReservationMailer.send_reservation_mail(@booking).deliver_now
     else
-      render :action => new
+      render :action => 'new'
     end
   end
 

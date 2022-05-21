@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   def contact
   end
 
-  def menu
+  def carte
   end
 
   def kookies

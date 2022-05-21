@@ -5,7 +5,7 @@ Rails.application.routes.draw do
     get 'contact', to: 'pages#contact', as: :contact
     get 'kookies', to: 'pages#kookies', as: :kookies
     get 'mentions', to: 'pages#mentions', as: :mentions
-    get 'menu', to: 'pages#menu', as: :menu
+    get 'carte', to: 'pages#carte', as: :carte
     get 'rgpd', to: 'pages#rgpd', as: :rgpd
     resources :bookings, only: [:new, :create]
 
