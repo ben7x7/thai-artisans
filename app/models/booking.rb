@@ -1,12 +1,12 @@
 class Booking < ApplicationRecord
 
-  attribute :name, validate: true
-  attribute :email, validate: /\A[^@\s]+@[^@\s]+\z/i
-  attribute :phone, validate: true
-  attribute :pax, validate: true
-  attribute :date, validate: :check_date_valid?
-  attribute :time, validate: :check_time_valid?
-  attribute :message
+  validates :name, presence: true
+  validates :email, format: { with: /\A[^@\s]+@[^@\s]+\z/i }
+  validates :phone, presence: true
+  validates :pax, presence: true
+  validates :date, presence: true, if: :check_date_valid?
+  validates :time, presence: true, if: :check_time_valid?
+
 
   def check_date_valid?
     if date == Date.today.strftime("%Y-%m-%d")
