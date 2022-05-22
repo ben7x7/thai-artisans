@@ -9,9 +9,9 @@ class Booking < ApplicationRecord
 
 
   def check_date_valid?
-    if date == Date.today.strftime("%Y-%m-%d")
+    if date == Date.today
       errors.add(:date, 'Réserver par téléphone, SVP!')
-    elsif date < Date.today.strftime("%Y-%m-%d")
+    elsif date < Date.today
       errors.add(:date, 'Date passée !')
 
     # if date == '2021-12-20' ||
@@ -24,16 +24,16 @@ class Booking < ApplicationRecord
   end
 
   def check_time_valid?
-    start_lunch = '12:00'
-    end_lunch = '14:00'
-    start_diner = '19:00'
-    end_diner = '22:00'
+    start_lunch = 12
+    end_lunch = 14
+    start_diner = 19
+    end_diner = 22
 
-    if time < start_lunch
+    if time.hour < start_lunch
       errors.add(:time, 'Lunch: 12:00-14:00, Diner: 19:00-22:00')
-    elsif time > end_lunch && time < start_diner
+    elsif time.hour > end_lunch && time.hour < start_diner
       errors.add(:time, 'Lunch: 12:00-14:00, Diner: 19:00-22:00')
-    elsif time > end_diner
+    elsif time.hour > end_diner
       errors.add(:time, 'Lunch: 12:00-14:00, Diner: 19:00-22:00')
     end
   end
