@@ -31,13 +31,13 @@
   padding: 1rem 4rem;
   -webkit-appearance: listbox;
 }
-input#reservation_name,
-input#reservation_email,
-input#reservation_phone,
-input#reservation_pax,
-input#reservation_date,
-input#reservation_time,
-input#reservation_message {
+input#booking_name,
+input#booking_email,
+input#booking_phone,
+input#booking_pax,
+input#booking_date,
+input#booking_time,
+input#booking_message {
   border-bottom: 1px solid $gold;
   border-top: none;
   border-right: none;

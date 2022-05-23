@@ -41,19 +41,80 @@ a#navbarDropdown.dropdown-toggle {
   color: $gold;
   margin-right: 2rem;
 }
+.dropdown-menu[data-bs-popper] {
+  position: absolute;
+  top: 75px;
+  right: 10px;
+  background-color: $down-black;
+  border: 1px solid $gold;
+  border-radius: 5px;
+}
+.dropdown-menu:before {
+  content: ' ';
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  right: 30px;
+  top: -6px;
+  background-color: $down-black;
+  transform: rotate(45deg);
+  border-left: 1px solid $gold;
+  border-top: 1px solid $gold;
+}
+.languages-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+a.globe-links {
+  width: 100%;
+  color: $gold;
+  text-decoration: none;
+}
+a.globe-links:hover {
+  color: $down-black;
+  background-color: $gold;
+  text-decoration: none;
+}
 
 @media(max-width: 992px) {
-  #language {
-    width: fit-content;
-    padding-left: 2rem;
+  .navbar .navbar-collapse {
+    padding-right: 0px;
+  }
+  .dropdown-menu[data-bs-popper] {
+    position: absolute;
+    top: 275px;
+    left: 32px;
+    width: 100px;
+    background-color: $down-black;
+    border: 1px solid $gold;
+    border-radius: 5px;
+  }
+  .dropdown-menu:before {
+    content: ' ';
+    height: 10px;
+    width: 10px;
+    position: absolute;
+    left: 25px;
+    top: -6px;
+    background-color: $down-black;
+    transform: rotate(45deg);
+    border-left: 1px solid $gold;
+    border-top: 1px solid $gold;
   }
   a.nav-link:hover {
     color: $down-black;
     background-color: $gold;
   }
+  a#navbarDropdown.dropdown-toggle:hover {
+    color: $down-black;
+  }
   button.navbar-toggler:focus {
     box-shadow: none;
   }
+
 }
 
 

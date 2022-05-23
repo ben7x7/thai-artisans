@@ -14,11 +14,15 @@
       <%= link_to t('nav.reservation'), new_booking_path, class: "nav-link" %>
       <%= link_to t('nav.menu'), carte_path, class: "nav-link" %>
       <%= link_to t('nav.contact'), contact_path, class: "nav-link" %>
-      <select class="form-select" id="language" aria-label="Default select example">
-        <option selected>FR</option>
-        <option value="1"><%= link_to 'FR', url_for(locale: 'fr') %></option>
-        <option value="2"><%= link_to 'EN', url_for(locale: 'en') %></option>
-      </select>
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fas fa-globe"></i>
+      </a>
+      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+        <div class="languages-list">
+          <%= link_to 'FR', url_for(locale: 'fr'), class:"globe-links" %>
+          <%= link_to 'EN', url_for(locale: 'en'), class:"globe-links" %>
+        </div>
+      </div>
     </div>
   </div>
 </nav>
