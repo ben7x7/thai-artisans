@@ -5,7 +5,7 @@
 <p>Phone: <%= @booking.phone %></p>
 <p>Couverts: <%= @booking.pax %></p>
 <p>Date: <%= @booking.date %></p>
-<p>Heure: <%= @booking.time %></p>
+<p>Heure: <%= @booking.time.strftime('%H:%M') %></p>
 <p>Message: <%= @booking.message %></p>
 <br>
 <p>Merci de confirmer cette reservation !</p>

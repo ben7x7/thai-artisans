@@ -7,7 +7,7 @@ Email: <%= @booking.email %>
 Phone: <%= @booking.phone %>
 Couverts: <%= @booking.pax %>
 Date: <%= @booking.date %>
-Heure: <%= @booking.time %>
+Heure: <%= @booking.time.strftime('%H:%M') %>
 Message: <%= @booking.message %>
 
 Merci de confirmer cette reservation !
