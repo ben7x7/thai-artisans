@@ -6,7 +6,7 @@ fr:
     contact: "CONTACT"
   btn:
     reserve: "RÉSERVER UNE TABLE"
-    contact: "CONTACTER NOUS"
+    contact: "NOUS CONTACTER"
     home: "ACCUEIL"
     carte: "VOIR LA CARTE ENTIERE"
     send: "ENVOYER"
@@ -35,7 +35,7 @@ fr:
     date2: "Dimanche :"
     date3: "FERMÉ"
   contact:
-    title: "Contactez Nous"
+    title: "Nous Contactez"
     subtitle: "Faites nous part de vos projets !"
     label:
       name: "Nom:"
@@ -105,8 +105,8 @@ fr:
       noodle8: "Nouilles de riz à l'ail et ciboulette"
     m4:
       dessert1: "Demie mangue thaïlandaise"
-      dessert2: "Demie mangue thaïlandaise avec riz gluand"
+      dessert2: "Demie mangue thaïlandaise avec riz gluant"
       dessert3: "Ananas confit au Cointreau, glace au choix"
       dessert4: "Salade de fruits exotiques"
-      dessert5: "Flan au marrons au lait de coco"
+      dessert5: "Flan aux marrons au lait de coco"
       dessert6: "Glace ou sorbet au choix (par boule)"
