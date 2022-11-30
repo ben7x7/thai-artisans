@@ -3,9 +3,6 @@
   "description": "Restaurant thailandais",
   "private": true,
   "version": "0.1.0",
-  "engines": {
-    "node": "19.x"
-  },
   "dependencies": {
     "@popperjs/core": "^2.11.4",
     "@rails/actioncable": "^6.0.0",
