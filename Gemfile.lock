@@ -266,7 +266,7 @@ DEPENDENCIES
   pry-rails
   psych
   puma (~> 4.1)
-  rails (~> 7.0.4)
+  rails (~> 7.0.3)
   sass-rails (>= 6)
   selenium-webdriver
   simple_form!
