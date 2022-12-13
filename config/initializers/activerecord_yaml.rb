@@ -1,3 +1,3 @@
-ActiveRecord.use_yaml_unsafe_load = true
+ActiveRecord.use_yaml_safe_load = true
 
 
