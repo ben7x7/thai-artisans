@@ -17,7 +17,7 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 
 
-require("bootstrap")
+import 'bootstrap';
 
 // const countDown = () => {
 //   const countDate = new Date('May 9, 2022 12:00:00').getTime();
