@@ -14,7 +14,7 @@ class Booking < ApplicationRecord
     elsif date < Date.today
       errors.add(:date, 'Date passée !')
 
-    # if date == '2021-12-20' ||
+    # if date == '2022-12-24' ||
     #    date == '2021-12-21' ||
     #    ...
     #    date == '2022-01-08' ||
