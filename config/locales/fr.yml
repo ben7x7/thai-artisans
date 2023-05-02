@@ -47,6 +47,9 @@ fr:
       subtitle: "Une confirmation vous sera envoyée par email prochainement."
     new:
       title: "Réservation En Ligne"
+      error: "Temporairement indisponible "
+      error2: "Vous pouvez réserver par notre formulaire de contact"
+      error3: "ou nous appeler au 022.870.0507"
       subtitle1: "Afin de réserver une table pour aujourd'hui,"
       subtitle2: "veuillez contacter le restaurant au 022.870.0507"
   menu:

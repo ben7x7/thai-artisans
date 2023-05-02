@@ -47,6 +47,9 @@ en:
       subtitle: "A confirmation will be mailed to you shortly."
     new:
       title: "Online Reservation"
+      error: "Temporary out of order"
+      error2: "Please use our contact form to reserve a table"
+      error3: "or call us at +41.22.870.0507"
       subtitle1: "For today's reservation,"
       subtitle2: "please contact the restaurant at +41.22.870.0507 "
   menu:

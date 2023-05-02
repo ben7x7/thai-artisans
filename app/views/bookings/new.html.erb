@@ -8,9 +8,13 @@
         </div>
         <div class="reservation-subheader text-center">
           <p id="reservation-subheader">
-            <%= t('reservation.new.subtitle1') %> <br>
-            <%= t('reservation.new.subtitle2') %>
+            <%= t('reservation.new.error') %> <br>
+            <%= t('reservation.new.error2') %> <br>
+            <%= t('reservation.new.error3') %>
+      <!--  <%= t('reservation.new.subtitle1') %> <br>
+            <%= t('reservation.new.subtitle2') %> -->
           </p>
+          <%= link_to t('btn.contact'), contact_path, class: "btn btn-gold" %>
         </div>
       </div>
     </div>
@@ -84,13 +88,14 @@
 
             <div class="row">
               <div class="col text-center">
-                <%= f.submit t('btn.reserve'), class: "btn btn-gold" %>
+
+            <!--    <%= f.submit t('btn.reserve'), class: "btn btn-gold" %>  -->
+
                 <br>
                 <br>
                 <a class="home-link" href="/"><%= t('btn.home') %></a>
               </div>
             </div>
-
           <% end %>
         </div>
       </div>
