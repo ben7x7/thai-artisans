@@ -9,17 +9,17 @@ class Booking < ApplicationRecord
 
 
   def check_date_valid?
-    if date == Date.today
-      errors.add(:date, 'Réserver par téléphone, SVP!')
-    elsif date < Date.today
-      errors.add(:date, 'Date passée !')
+    # if date == Date.today
+    #  errors.add(:date, 'Réserver par téléphone, SVP!')
+    # elsif date < Date.today
+    #  errors.add(:date, 'Date passée !')
 
-    # if date == '2022-12-24' ||
+     if date < '2025-01-02'
     #    date == '2021-12-21' ||
     #    ...
     #    date == '2022-01-08' ||
     #    date == '2022-01-09'
-    #    errors.add(:date, 'Fermé jusqu\'au 9 janvier inclus' )
+        errors.add(:date, 'Fermé jusqu\'au 1 janvier inclus' )
     end
   end
 
